@@ -101,7 +101,7 @@ form{
 /*Cuadros para ingresar datos*/
 input[type=text], input[type=password], input[type=tel], input[type=month]{
     width: 100%;
-    margin: 10px 0;
+    margin: 50px 0;
     border-radius: 5px;
     padding: 15px 5px;
     box-sizing: border-box;
@@ -121,6 +121,17 @@ button {
 button:hover {
     opacity: 0.6;
     cursor: pointer;
+}
+.boton1{
+
+    background:#030804;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 800;
+    cursor:pointer;
 }
 /*Centrar texto para el contenedor del encabezado*/
 .contenedorEncabezado{
