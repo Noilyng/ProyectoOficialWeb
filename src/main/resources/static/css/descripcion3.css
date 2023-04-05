@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    /*fuente*/
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+    overflow-x:hidden;
+}
+
+
+/* Estilos generales */
+.navbar{
+    height:15vh;
+    width:160%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+
+   
+}
+
+
+ul, ol {
+    list-style:none;
+}
+
+.nav {
+    width:800px; 
+    margin:120 ; 
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    background-color:#0099ff;
+    color:#fff;
+    text-decoration:none;
+    padding:15px 30px;
+    display:block;
+}
+
+.nav li a:hover {
+    background-color:#0066cc;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+.logo{
+    height:200px;
+    width:300px;
+    cursor:pointer;
+    left: 50%;
+}
+.boton1{
+    display: inline-block;
+    background:#0099ff;
+    line-height: 3em; /*tamano de la letra*/
+    padding: 0 1.5em;/*1.5 veces el tamano de la letra */
+    margin:7px 0px 215px;
+    text-decoration: none;
+    top: 200px;
+    color:#fff;
+    font-weight: 800;
+    cursor:pointer;
+   
+}
+.grafica{
+    float: left;
+     
+}
+.content h1{
+   font-size: 40px;
+   font-weight: 800;
+   margin: 30px 10px 0px; 
+}
+.content p{
+   font-size: 18px;
+   font-weight: 800;
+   margin: 20px 50px 10px; 
+}
+.content li{
+    font-size: 18px;
+   font-weight: 800;
+    
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color:#003366;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box h1{
+    color: #fff;
+    margin-bottom:25px;
+    font-size: 20px;
+    
+}
+.pie-pagina .grupo-1 .box a{
+   
+    color:#fff;
+    text-decoration:none;
+    padding:15px 30px;
+    display:block;
+    
+}
+.boton-modal{
+    display: inline-block;
+    background:#0099ff;
+    line-height: 3em; /*tamano de la letra*/
+    padding: 0 1.5em;/*1.5 veces el tamano de la letra */
+    margin:7px 0px 215px;
+    text-decoration: none;
+    top: 200px;
+    color:#fff;
+    font-weight: 800;
+    cursor:pointer;
+    
+   
+}
+#btn-modal{
+    display:none;
+}
+#btn-modal:checked ~ .container-modal {
+    display:flex;
+}
+.boton-modal:hover{
+    background-color: #006699;
+}
+.container-modal{
+    width: 100%; /*ancho*/
+    height: 100vh; /*alto*/
+    position:fixed; /*estado fijo*/
+    top: 0;
+    left:0;
+    background-color:rgba(144,148,150,0.8);
+    display:none;
+    justify-content: flex-end;
+    align-items:center;
+    z-index: 100;
+}
+.content-modal{
+  width: 100%;
+  max-width: 300px;
+  padding:20px;
+  background-color:#006699;
+  border-radius: 4px;
+  
+}
+.content-modal h2{
+    color: #fff;
+     
+}
+.content-modal .btn-cerrar{
+    width:100%;
+    margin-top: 15px;
+    display:flex;
+    justify-content: flex-end;
+}
+.content-modal .btn-cerrar{
+    padding: 7px 10px;
+    background-color: #006699;
+    color: #fff;
+    border-radius: 4px;
+    cursor:pointer;
+    
+}
+.carrito{
+    height:50px;
+    width:100px;
+    cursor:pointer;
+    float: left;
+    
+}
+
