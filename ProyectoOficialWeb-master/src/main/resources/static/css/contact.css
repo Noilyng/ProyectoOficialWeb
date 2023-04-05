@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    /*fuente*/
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+    overflow-x:hidden;
+    
+}
+
+
+/* Estilos generales */
+.navbar{
+    height:15vh;
+    width:160%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+
+   
+}
+
+
+ul, ol {
+    list-style:none;
+}
+
+.nav {
+    width:800px; 
+    margin:120px ; 
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    background-color:#0099ff;
+    color:#fff;
+    text-decoration:none;
+    padding:15px 30px;
+    display:block;
+}
+
+.nav li a:hover {
+    background-color:#0066cc;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+.logo{
+    height:200px;
+    width:300px;
+    cursor:pointer;
+    left: 50%;
+}
+.content h1{
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+.content h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.content2{
+    position:absolute;
+    top:35%;
+    /*35 cuasro 1*/
+    left:30%;
+    width: 900px; /*ancho del cuadro*/
+    height: 590px; /*alto del cuadro*/
+    background:#99ccff;
+    border-radius: 10px;/*curvatura de los lados*/
+    margin: -100px -200px 20px;
+    
+    
+}
+
+
+.content2 h1{
+    text-align: center;
+    margin-top: 0px;
+    padding: 20px 0;
+    color: black;
+    /*#0099ff*/
+    background-color:#0099ff;
+	
+}
+
+
+.content2 form{
+    top: 50%;
+    padding: 13px 30px;
+    box-sizing: border-box;
+    height: auto;
+}
+
+
+.txt_field1 input{
+    width:45%;
+    padding:0 5px;
+    height: 40px;
+    font-size: 16px;
+    border:none;
+    background:#6bbce4;
+    outline:none;
+    position:relative;
+    border: 2px solid #0099ff;
+    margin: 60px 0;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+
+.txt_field1 label{
+    position: absolute;
+    top:40%;
+    left:5px;
+    transform: translateY(-500%) translateX(24%);
+    font-size: 16px;
+    pointer-events: none;
+    overflow: hidden;
+
+}
+
+
+.txt_field2 input{
+  
+    width:45%;
+    padding:0 41px;
+    height: 40px;
+    font-size: 16px;
+    border:none;
+    background:#6bbce4;
+    outline:none;
+    position:relative;
+    border: 2px solid #0099ff;
+    margin: 30px 0;
+	overflow: hidden;
+	border-radius: 10px;
+	transform: translateY(-60%);
+}
+
+.txt_field2 label{
+    position: absolute;
+    top:40%;
+    left:5px;
+    color:#000000;
+    transform: translateY(65%) translateX(70%);
+    font-size: 16px;
+    pointer-events: none;
+    overflow: hidden;
+
+}
+
+.txt_field3 input{
+    width:45%;
+    padding:0 5px;
+    height: 100px;
+    font-size: 16px;
+    border:none;
+    background:#6bbce4;
+    outline:none;
+    position:relative;
+    border: 2px solid #0099ff;
+    margin: 30px 0;
+    overflow: auto;
+    border-radius: 10px;
+    transform: translateY(-30%);
+}
+
+
+.txt_field3 label{
+    position: absolute;
+    top:38%;
+    left:5px;
+    color:#00000;
+    transform: translateY(600%) translateX(50%);
+    font-size: 16px;
+    pointer-events: none;
+    overflow: hidden;
+
+}
+
+
+
+
+
+.content2 a{
+    display:inline-block;
+    font-size:1em;
+    background: #2ae4fe;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+	color: white;
+	transform: translateX(50%);
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+        
+}
+
+
+
+.boton{
+   
+    background:#0099ff;
+    line-height: 3em; /*tamano de la letra*/
+    padding: 0 1.0em;/*1.5 veces el tamano de la letra */
+    font-weight: 800;
+    text-decoration: none;
+    
+    color:#fff;
+    margin:-200px 150px 0px;
+    cursor:pointer;
+    
+
+}
+
+.contacto{
+    height:350px;
+    width:490px;
+    margin: -590px 384px 140px;
+}
+.pie-pagina{
+    width: 100%;
+    background-color:#003366;
+    margin: 680px 0px 0px;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box h1{
+    color: #fff;
+    margin-bottom:25px;
+    font-size: 20px;
+    
+}
+.pie-pagina .grupo-1 .box a{
+   
+    color:#fff;
+    text-decoration:none;
+    padding:15px 30px;
+    display:block;
+    
+}
+
+.link:hover {
+    color:#0099ff 
+} 
+
+
