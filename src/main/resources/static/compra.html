@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>Compra</title>
+        <link rel="stylesheet" href="css/compra.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!-- NavBar -->
+        <div class="container">
+            <!-- div contenedor de nuestro NavBar -->
+            <div class="navbar">
+                <!-- Logo -->
+                <img class="logo"src="images/logo.png" alt="logo de una la pagina"/>
+                <ul class="nav">
+                    <!-- Opciones del NavBar-->
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="carrito.html">Carrito</a></li>
+                    <li><a href="listaDeseos.html">Lista de deseos</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="registro.html">Register</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+            </div>
+        </div>
+    </div>  
+    <h1>Ingresar datos de facturacion</h1>
+    <form action="">
+        <!-- div que contiene el encabezado para el Form de Login -->
+        <div class="contenedorEncabezado">
+            <h3>Informacion de paga</h3>
+            <p>Ingrese los datos de facturacion</p>
+        </div>
+        <br>
+        <!-- div con el contenedor principal para todos los inputs -->
+        <div class="contenedorPrincipal">
+            <div style="float: left;"> 
+                <!-- Nombre -->
+                <label for="nombre" style="color: black;">Tu nombre</label>
+                <!-- Etiqueta "required" para que sea obligatorio llenar el espacio -->
+                <input type="text" placeholder="Nombre" name="nombre" required>
+                <br><br>
+            </div>
+            <div style="float: right;">
+                <!-- Apellidos -->
+                <label for="apellidos" style="color: black;">Tus apellidos</label>
+                <!-- Etiqueta "required" para que sea obligatorio llenar el espacio -->
+                <input type="text" placeholder="Apellidos" name="apellidos" required>
+                <br><br>
+            </div>
+            <!-- Direccion 1 -->
+            <label for="direccion1" style="color: black;">Direccion 1</label>
+            <!-- Etiqueta "required" para que sea obligatorio llenar el espacio -->
+            <input type="text" placeholder="Direccion 1" name="direccion1" required>
+            <br><br>
+            <!-- Direccion 2 -->
+            <label for="direccion2" style="color: black;">Direccion 2</label>
+            <!-- Etiqueta "required" para que sea obligatorio llenar el espacio -->
+            <input type="text" placeholder="Direccion 2" name="direccion2" required>
+            <br><br>
+            <!-- Ciudad -->
+            <label for="ciudad" style="color: black;">Ciudad</label>
+            <!-- Etiqueta "required" para que sea obligatorio llenar el espacio -->
+            <input type="text" placeholder="Ciudad" name="ciudad" required>
+            <br><br>
+            <div style="float: left;"> 
+                <!-- Provincia -->
+                <label for="provincia" style="color: black;">Provincia</label>
+                <!-- Etiqueta "required" para que sea obligatorio llenar el espacio -->
+                <input type="text" placeholder="Provincia" name="provincia" required>
+                <br><br>
+            </div>
+            <div style="float: right;">
+                <!-- Codigo Postal -->
+                <label for="codigoPostal" style="color: black;">Codigo Postal</label>
+                <!-- Etiqueta "required" para que sea obligatorio llenar el espacio -->
+                <input type="text" placeholder="Codigo Postal" name="codigoPostal" required>
+                <br><br>
+            </div>
+            <!-- Numero de la Tarjeta -->
+            <label for="numTarjeta" style="color: black;">Numero de Tarjeta</label>
+            <!-- Etiqueta "required" para que sea obligatorio llenar el espacio -->
+            <input type="tel" placeholder="Numero de Tarjeta" name="numTarjeta" required>
+            <br><br>
+            <div style="float: left;">
+                <!-- Mes de Expiracion -->
+                <label for="mesExp" style="color: black;">Mes y año</label>
+                <!-- Etiqueta "required" para que sea obligatorio llenar el espacio -->
+                <input type="month" placeholder="Mes" name="mesExp" required>
+                <br><br>
+            </div>
+            <div style="float: right;">
+                <!-- Codigo de Seguridad -->
+                <label for="codSeg" style="color: black;">Codigo Seguridad</label>
+                <!-- Etiqueta "required" para que sea obligatorio llenar el espacio -->
+                <input type="tel" placeholder="Codigo de Seguridad" name="codSeg" required>
+                <br><br>
+            </div>
+            <!-- Boton de Ingresar -->
+            <button type="submit">Pagar</button>
+            <br><br>
+        </div>
+    </form>
+    <br><br>
+</body>
+<!-- Pie de pagina -->
+<footer class="pie-pagina">
+    <!-- Columna 1 -->
+<div class="grupo-1">
+    <div class="box">
+        <h1>Sobre nosotros</h1>
+        <p>En Tienda Computadoras nos proyectamos a ser la mejor empresa de Costa Rica en servicios de computación, asi como de equipos y accesorios.</p>
+    </div>
+    <div class="box">
+        <h1><a href="faq.html">Preguntas Frecuentes</a></h1>
+    </div> 
+    <div class="box">
+        <h1><a href="contact.html">Contactenos</a></h1>
+    </div> 
+    <div class="box">
+        <h1>Siguenos</h1>
+        <p>TiendaComputadoras.facebook</p>
+    </div> 
+</div>
+</footer>
+</html>
