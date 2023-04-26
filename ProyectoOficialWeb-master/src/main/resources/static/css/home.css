@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto+Condensed:wght@300&display=swap');
 *{
-    margin:0;
+    
     padding:0;
     /*fuente*/
     font-family: 'Roboto Condensed', sans-serif;
@@ -72,36 +72,42 @@ ul, ol {
 }
 
 .content h1{
-    font-size: 40px;
-    font-weight: 800;
-    margin: 50px 410px 10px;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 40px 450px 10px;
 }
 .monitor{
-    height:200px;
-    width:300px;
-    margin: 50px 20px 30px;
+    height:300px;
+    width:400px;
+    margin: 50px 100px 30px;
 }
-
-.content p{
+.contenidohome{
+     height:500px;
+    width:1500px;
+    margin: 0px 0px 30px;
+}
+.content table{
     font-size: 20px;
     font-weight: 800;
-    margin:-200px 350px 215px;
+    margin:-280px 500px 215px;
     
 }
-.content p a{
+.content td a{
     color:#000000;
     
     text-decoration:none;
     
     display:block;
 }
-
+.content td a:hover {
+    color:#0099ff 
+}
 .boton1{
     display: inline-block;
     background:#0099ff;
     line-height: 3em; /*tamano de la letra*/
     padding: 0 1.5em;/*1.5 veces el tamano de la letra */
-    margin:-200px 350px 215px;
+    margin:-200px 500px 215px;
     text-decoration: none;
     top: 200px;
     color:#fff;
@@ -110,18 +116,7 @@ ul, ol {
 }
 
 
-.procesador{
-    height:200px;
-    width:300px;
-    margin: -100px 30px 30px;
-    
-   
-}
-.grafica{
-    height:200px;
-    width:300px;
-    margin: -100px 30px 30px;
-}
+
 
 .pie-pagina{
     width: 100%;

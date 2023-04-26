@@ -1,7 +1,9 @@
-<html>
+
+<html xmlns:th="http://www.thymeleaf.org">
     <head>
         <title>Registro</title>
-        <link rel="stylesheet" href="css/registro.css">
+        
+        <link th:href="@{/css/registro.css}" rel="stylesheet" />
         <meta charset="utf-8">
     </head>
     <body>
@@ -20,9 +22,13 @@
                     <li><a href="configadmin.html">Administrador</a></li>
             </div>
         </div>
-    </div>  
+    </div>
+    
     <h1>Registra una cuenta</h1>
-    <form action="">
+    <form  th:object = "${registro}"
+                          th:action = "@{/save}"
+                          method="POST">
+        
         <!-- div que contiene el encabezado para el Form de Registro -->
         <div class="contenedorEncabezado">
             <h3>Registro</h3>
@@ -31,21 +37,33 @@
         <br>
         <!-- div con el contenedor principal para todos los inputs -->
         <div class="contenedorPrincipal">
+            <label for="nombre">Nombre</label><br><br>
+            <!-- Etiqueta "required" para que sea obligatorio llenar el espacio -->
+            <input type="text" th:field="*{nombre}" placeholder="Nombre" id="nombre">
+            <br><br>
+            
+            <label for="apellido1">Primer Apellido</label><br><br>
+            <!-- Etiqueta "required" para que sea obligatorio llenar el espacio -->
+            <input type="text" th:field="*{apellido1}" placeholder="Primer Apellido" id="apellido1" >
+            <br><br>
+            
+             <label for="apellido2">Segundo Apellido</label><br><br>
+            <!-- Etiqueta "required" para que sea obligatorio llenar el espacio -->
+            <input type="text" th:field="*{apellido2}" placeholder="Segundo Apellido" id="apellido2" >
+            <br><br>
+            
             <!-- Correo -->
-            <label for="correo">Tu correo</label>
+            <label for="correo">Tu correo</label><br><br>
             <!-- Etiqueta "required" para que sea obligatorio llenar el espacio -->
-            <input type="email" placeholder="Correo" name="correo" required>
+            <input type="text" th:field="*{correo}" placeholder="Correo" id="correo" >
             <br><br>
+            
             <!-- Contrasena -->
-            <label for="contra">Tu contrasena</label>
+            <label for="contra">Tu contrasena</label><br><br>
             <!-- Etiqueta "required" para que sea obligatorio llenar el espacio -->
-            <input type="password" placeholder="Contrasena" name="contra" required>
+             <input type="text" th:field="*{contrasena}" placeholder="Contrasena" id="contrasena">
             <br><br>
-            <!-- Repetir Contrasena -->
-            <label for="contra2">Repetir contrasena</label>
-            <!-- Etiqueta "required" para que sea obligatorio llenar el espacio -->
-            <input type="password" placeholder="Repetir Contrasena" name="contra" required>
-            <br><br>
+           
             <!-- Boton de Ingresar -->
             <button type="submit">Registrar</button>
             <br><br>

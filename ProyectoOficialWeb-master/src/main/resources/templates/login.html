@@ -1,0 +1,79 @@
+<html xmlns:th="http://www.thymeleaf.org"     
+      xmlns:sec="http://thymeleaft.org/extras/spring-security">
+    <head>
+        <title>Login</title>
+        <!-- importar css -->
+        <link rel="stylesheet"  th:href="@{/css/registro.css}">
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+        <!-- NavBar -->
+        <div class="container">
+            <!-- div contenedor de nuestro NavBar -->
+            <div class="navbar">
+                <!-- Logo -->
+                <img class="logo"src="images/logo.png" alt="logo de una la pagina"/>
+                <ul class="nav">
+                    <!-- Opciones del NavBar-->
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="listaDeseos.html">Lista de deseos</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="registro.html">Register</a></li>
+                    <li><a href="configadmin.html">Administrador</a></li>
+            </div>
+        </div>
+    </div>  
+    
+    <h1>Ingresa a tu cuenta</h1>
+    <form name="f" th:action="@{/login}" method="post">
+        <!-- div que contiene el encabezado para el Form de Login -->
+        <div class="contenedorEncabezado">
+            <h3>Ingresar</h3>
+            <p>Escribe tu correo y contrasena</p>
+        </div>
+        <br>
+        <!-- div con el contenedor principal para todos los inputs -->
+        <div class="contenedorPrincipal">
+            <!-- Correo -->
+            <label for="correo">Tu correo</label>
+            <!-- Etiqueta "required" para que sea obligatorio llenar el espacio -->
+            <input type="email" placeholder="Correo" id="username"  name="correo" required>
+            <br><br>
+            <!-- Contrasena -->
+            <label for="contra">Tu contrasena</label>
+            <!-- Etiqueta "required" para que sea obligatorio llenar el espacio -->
+            <input type="password" placeholder="Contrasena" id="password" name="contra" required>
+            <br><br>
+            <!-- Boton de Ingresar -->
+            <button type="submit">Ingresar</button>
+            <br><br>
+            <!-- Boton de Registrarse -->
+            <p class="registro">No tienes cuenta? <a href="registro.html">Registrate aqui!</a></p>
+        </div>
+    </form>
+    <br><br>
+    
+    
+    <!-- Pie de pagina -->
+    <footer class="pie-pagina">
+        <!-- Columna 1 -->
+    <div class="grupo-1">
+        <div class="box">
+            <h1>Sobre nosotros</h1>
+            <p>En Tienda Computadoras nos proyectamos a ser la mejor empresa de Costa Rica en servicios de computación, asi como de equipos y accesorios.</p>
+        </div>
+        <div class="box">
+            <h1><a href="faq.html">Preguntas Frecuentes</a></h1>
+        </div> 
+        <div class="box">
+            <h1><a href="contact.html">Contactenos</a></h1>
+        </div> 
+        <div class="box">
+            <h1>Siguenos</h1>
+            <p>TiendaComputadoras.facebook</p>
+        </div> 
+    </div>
+    </footer>
+</body>
+</html>

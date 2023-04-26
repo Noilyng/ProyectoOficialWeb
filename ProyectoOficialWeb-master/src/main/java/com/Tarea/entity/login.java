@@ -1,14 +1,15 @@
 
 package com.Tarea.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+
 import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 @Entity
 //en nuestra tabla login
@@ -29,6 +30,8 @@ public class login implements Serializable { //serializable es darle formato al 
     @JoinColumn(name ="registro_id")
     //objeto de tipo registro
     private registro registro;
+    
+    
 
     //getter and setter
     public long getId() {

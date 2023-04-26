@@ -1,17 +1,17 @@
-
 package com.Tarea.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+
 import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
-//en nuestra tabla productos
-@Table(name = "productos")
-public class productos implements Serializable { //serializable es darle formato al objeto
+//en nuestra tabla producto1
+@Table(name = "producto1")
+public class producto1 implements Serializable { //serializable es darle formato al objeto
 
     @Id //indica que el atributo id es el id de nuestra tabla 
     @GeneratedValue(strategy = GenerationType.IDENTITY)//que el id es incremental
@@ -41,10 +41,4 @@ public class productos implements Serializable { //serializable es darle formato
     public String getPrecio() {
         return precio;
     }
-
-    public void setPrecio(String precio) {
-        this.precio = precio;
-    }
-    
-    
 }
